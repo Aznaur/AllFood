@@ -1,10 +1,10 @@
 // Шаблон для подключения шрифтов
 
 @font-face {
-  font-family: '';
+  font-family: 'Raleway';
   font-style: normal;
-  src: url('../fonts/') format('woff'),
-       url('../fonts/') format('woff2');
-  font-weight: 400;
+  src: url('../fonts/Raleway.woff2') format('woff2'),
+       url('../fonts/Raleway.woff') format('woff');
+  font-weight: 400 700;
   font-display: swap;
 }
