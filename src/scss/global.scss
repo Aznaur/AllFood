@@ -1,13 +1,22 @@
 img {
-  max-width: 100%;
+  display: block;
   height: auto;
+  max-width: 100%;
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #F7F7FA;
+  column-gap: 30px;
   color: #000000;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  font-family: 'Raleway','Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  grid-template-columns: 252px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  min-width: 320px;
+  padding: 30px;
+  row-gap: 40px;
 }

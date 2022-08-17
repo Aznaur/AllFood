@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
-<body>
+<body class="container">
   //= ./template/main-nav.html
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница сайта готовых рационов AllFood</h1>
     <div class="slider">
       <div class="slider__item">
-        <img class="slider__img" src="#" alt="Фото слайдера">
+        <img class="slider__img" src="../img/img-slider-1.jpg" alt="Фото слайдера">
         <div class="slider__text">
           <p class="slider__title">Топ продуктов во время пандемии - где взять витамины C, D и цинк</p>
           <p class="slider__subtitle">В этом году нам досталось настоящее испытание в виде пандемии, и, кажется, обычный чай тут уже не поможет.</p>
@@ -22,7 +22,7 @@
       </div>
       <ul class="slider__controls">
         <li class="slider__controls-item">
-          <button class="slider__controls-button"><span class="visually-hidden">1</span></button>
+          <button class="slider__controls-button slider__controls-button--active"><span class="visually-hidden">1</span></button>
         </li>
         <li class="slider__controls-item">
           <button class="slider__controls-button"><span class="visually-hidden">2</span></button>
@@ -41,7 +41,7 @@
     <section class="filter">
       <h2 class="visually-hidden">Настройки выбора блюд</h2>
       <div class="filter__sorting">
-        <p class="filter__sorting-text">Сортировать по:</p>
+        <p class="filter__text">Сортировать по:</p>
         <div class="filter__sorting-list">
           <a href="" class="filter__link filter__sorting-link">Популярности</a>
           <a href="" class="filter__link filter__sorting-link">Каллорийности</a>
@@ -50,10 +50,11 @@
       </div>
       <form action="#" class="filter__search">
         <label for="search-field" class="visually-hidden">Поле поиска</label>
+        <span class="filter__search-icon">&nbsp;</span>
         <input type="text" class="filter__search-input" id="search-field">
       </form>
       <div class="filter__teg">
-        <p class="filter__teg-text">Тэги:</p>
+        <p class="filter__text">Тэги:</p>
         <div class="filter__teg-list">
           <a href="" class="filter__link filter__teg-link">Омлет</a>
           <a href="" class="filter__link filter__teg-link">Завтрак</a>
@@ -75,229 +76,251 @@
       <h2 class="visually-hidden">Каталог блюд</h2>
       <article class="catalog__item catalog__item--large">
         <a href="" class="catalog__link">
-          <img src="#" alt="Фото блюда" class="catalog__img">
-          <h3 class="catalog__title">Рулетики из бекона</h3>
-          <p class="catalog__subtitle">Ужасно вкусно. Сытно! Просто и супер универсально. Ведь такое блюдо можно подавать не только в будни, но и на праздники. Его можно подавать и как самостоятельное, и как закуску, добавить любой гарнир ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">220</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">35 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">150 ккал </span>
-            </li>
-          </ul>
+          <img src="../img/img-bacon.jpg" alt="Фото блюда" class="catalog__img">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Рулетики из бекона</h3>
+            <p class="catalog__subtitle">Ужасно вкусно. Сытно! Просто и супер универсально. Ведь такое блюдо можно подавать не только в будни, но и на праздники. Его можно подавать и как самостоятельное, и как закуску, добавить любой гарнир ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">220</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">35 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">150 ккал </span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--small">
         <a href="" class="catalog__link">
-          <h3 class="catalog__title">Омлет-рулет</h3>
-          <p class="catalog__subtitle">Аппетитный омлет с кабачком и большим количеством ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">510</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">10 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">55 ккал</span>
-            </li>
-          </ul>
-        </a>
-      </article>
-      <article class="catalog__item catalog__item--small">
-        <a href="" class="catalog__link">
-          <h3 class="catalog__title">Куриные наггетсы</h3>
-          <p class="catalog__subtitle">Наггетсы из куриной грудки придутся по вкусу всем без ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">260</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">20 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">138 ккал</span>
-            </li>
-          </ul>
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Омлет-рулет</h3>
+            <p class="catalog__subtitle">Аппетитный омлет с кабачком и большим количеством ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">510</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">10 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">55 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--medium">
         <a href="" class="catalog__link">
-          <img src="#" alt="Фото блюда" class="catalog__img">
-          <h3 class="catalog__title">Стейк из лосося</h3>
-          <p class="catalog__subtitle">Лосось обладает очень нежным, мягким вкусом и восхитителен сам по себе ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">195</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">20 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">88 ккал </span>
-            </li>
-          </ul>
+          <img src="../img/img-salmon.jpg" alt="Фото блюда" class="catalog__img">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Стейк из лосося</h3>
+            <p class="catalog__subtitle">Лосось обладает очень нежным, мягким вкусом и восхитителен сам по себе ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">195</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">20 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">88 ккал </span>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </article>
+      <article class="catalog__item catalog__item--small">
+        <a href="" class="catalog__link">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Куриные наггетсы</h3>
+            <p class="catalog__subtitle">Наггетсы из куриной грудки придутся по вкусу всем без ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">260</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">20 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">138 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--large">
         <a href="" class="catalog__link">
-          <img src="#" alt="Фото блюда" class="catalog__img">
-          <h3 class="catalog__title">Пицца Маргарита</h3>
-          <p class="catalog__subtitle">Традиционное итальянское блюде, известное во всем мире. Ее состав очень простой, но вкус не оставляет равнодушным. Понадобится совсем небольшой перечень ингредиентов, но важно использовать именно те ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">210</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">25 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">220 ккал</span>
-            </li>
-          </ul>
+          <img src="../img/img-margarita.jpg" alt="Фото блюда" class="catalog__img">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Пицца Маргарита</h3>
+            <p class="catalog__subtitle">Традиционное итальянское блюде, известное во всем мире. Ее состав очень простой, но вкус не оставляет равнодушным. Понадобится совсем небольшой перечень ингредиентов, но важно использовать именно те ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">210</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">25 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">220 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--medium">
         <a href="" class="catalog__link">
-          <img src="#" alt="Фото блюда" class="catalog__img">
-          <h3 class="catalog__title">Сочные ребрышки</h3>
-          <p class="catalog__subtitle">Этот ароматный сладкий соус-маринад для рёбрышек неотличим от соуса, который ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">80</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">60 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">260 ккал</span>
-            </li>
-          </ul>
+          <img src="../img/img-ribs.jpg" alt="Фото блюда" class="catalog__img">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Сочные ребрышки</h3>
+            <p class="catalog__subtitle">Этот ароматный сладкий соус-маринад для рёбрышек неотличим от соуса, который ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">80</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">60 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">260 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--medium">
         <a href="" class="catalog__link">
-          <img src="#" alt="Фото блюда" class="catalog__img">
-          <h3 class="catalog__title">Салат с тунцом</h3>
-          <p class="catalog__subtitle">Свежий взгляд на популярный рыбный салат с обжаренным тунцом, овощами и зеленью ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">412</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">20 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">85 ккал</span>
-            </li>
-          </ul>
+          <img src="../img/img-tuna.jpg" alt="Фото блюда" class="catalog__img">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Салат с тунцом</h3>
+            <p class="catalog__subtitle">Свежий взгляд на популярный рыбный салат с обжаренным тунцом, овощами и зеленью ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">412</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">20 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">85 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--small">
         <a href="" class="catalog__link">
-          <h3 class="catalog__title">Салат из фасоли</h3>
-          <p class="catalog__subtitle">Сочный, вкусный и достаточно сытный салат из фасоли и ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">132</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">20 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">85 ккал</span>
-            </li>
-          </ul>
-        </a>
-      </article>
-      <article class="catalog__item catalog__item--small">
-        <a href="" class="catalog__link">
-          <h3 class="catalog__title">Сырные кексы</h3>
-          <p class="catalog__subtitle">Отличное дополнение к первым блюдам, к чаю или ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">222</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">35 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">147 ккал</span>
-            </li>
-          </ul>
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Салат из фасоли</h3>
+            <p class="catalog__subtitle">Сочный, вкусный и достаточно сытный салат из фасоли и ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">132</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">20 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">85 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--medium">
         <a href="" class="catalog__link">
-          <img src="#" alt="Фото блюда" class="catalog__img">
-          <h3 class="catalog__title">Салат с креветками</h3>
-          <p class="catalog__subtitle">Довольно изысканное блюдо, которое часто подают в ресторанах, готовится очень ...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">640</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">15 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">105 ккал</span>
-            </li>
-          </ul>
+          <img src="../img/img-shrimps.jpg" alt="Фото блюда" class="catalog__img">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Салат с креветками</h3>
+            <p class="catalog__subtitle">Довольно изысканное блюдо, которое часто подают в ресторанах, готовится очень ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">640</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">15 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">105 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <article class="catalog__item catalog__item--large">
         <a href="" class="catalog__link">
-          <img src="#" alt="Фото блюда" class="catalog__img">
-          <h3 class="catalog__title">Тосты с авокадо и шпинатом</h3>
-          <p class="catalog__subtitle">Быстрый и очень полезный завтрак с высоким содержанием насыщенных жиров и клетчатки. Для тоста рекомендуем выбирать цельнозерновой хлеб, а авокадо сорта Хаас. Можно добавить другие...</p>
-          <ul class="catalog__list info">
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">750</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">5 мин</span>
-            </li>
-            <li class="info__item">
-              <span class="info__icon">&nbsp;</span>
-              <span class="info__text">170 ккал</span>
-            </li>
-          </ul>
+          <img src="../img/img-avocado.jpg" alt="Фото блюда" class="catalog__img">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Тосты с авокадо и шпинатом</h3>
+            <p class="catalog__subtitle">Быстрый и очень полезный завтрак с высоким содержанием насыщенных жиров и клетчатки. Для тоста рекомендуем выбирать цельнозерновой хлеб, а авокадо сорта Хаас. Можно добавить другие...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">750</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">5 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">170 ккал</span>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </article>
+      <article class="catalog__item catalog__item--small">
+        <a href="" class="catalog__link">
+          <div class="catalog__wrapper">
+            <h3 class="catalog__title">Сырные кексы</h3>
+            <p class="catalog__subtitle">Отличное дополнение к первым блюдам, к чаю или ...</p>
+            <ul class="catalog__list info">
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">222</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">35 мин</span>
+              </li>
+              <li class="info__item">
+                <span class="info__icon">&nbsp;</span>
+                <span class="info__text">147 ккал</span>
+              </li>
+            </ul>
+          </div>
         </a>
       </article>
       <a href="#" class="catalog__more-button">Загрузить еще</a>
