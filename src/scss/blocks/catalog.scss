@@ -23,7 +23,7 @@
       & .catalog__wrapper {
         border: 1px dashed #31B768;
         border-radius: 10px;
-        padding: 15px;
+        padding: 14px;
       }
       & .catalog__subtitle {
         margin-bottom: 29px;
@@ -68,10 +68,10 @@
     display: block;
     font-weight: 600;
     font-size: 16px;
-    grid-column: 1/-1;
+    grid-column: 2/-1;
     line-height: 19px;
     padding: 20px 70px;
     text-decoration: none;
-    justify-self: center;
+    justify-self: start;
   }
 }

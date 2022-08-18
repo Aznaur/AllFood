@@ -9,4 +9,30 @@
     font-size: 12px;
     line-height: 14px;
   }
+  &__item {
+    align-items: flex-start;
+    display: flex;
+    margin-right: 23px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    box-sizing: border-box;
+    height: 14px;
+    margin-right: 5px;
+    width: 14px;
+    &--heart {
+      background-image: url('../../img/icon-heart.svg');
+    }
+    &--timer {
+      background-image: url('../../img/icon-timer.svg');
+    }
+    &--energy {
+      background-image: url('../../img/icon-energy.svg');
+    }
+  }
 }
