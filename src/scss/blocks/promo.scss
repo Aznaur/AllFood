@@ -1,0 +1,107 @@
+.promo {
+  &__title {
+    color: #01170A;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    margin: 0;
+  }
+  &__subtitle {
+    color: #01170A;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  &__link {
+    color: #31B768;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__item {
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07);
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &--baner {
+      & .promo__title {
+        left: 20px;
+        position: absolute;
+        top: 20px;
+        width: 111px;
+      }
+      & .promo__link {
+        bottom: 20px;
+        left: 20px;
+        position: absolute;
+      }
+    }
+    &--menu {
+      padding: 10px 10px 30px 10px;
+      text-align: center;
+      & .promo__img {
+        margin-bottom: 15px;
+      }
+      & .promo__title {
+        margin-bottom: 10px;
+      }
+      & .promo__subtitle {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 212px;
+      }
+    }
+    &--form {
+      box-sizing: border-box;
+      padding: 10px 10px 30px 10px;
+      text-align: center;
+      & .promo__img {
+        margin-bottom: 15px;
+      }
+      & .promo__title {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 158px;
+      }
+      & .promo__subtitle {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 212px;
+      }
+    }
+  }
+  &__form {
+    margin: 0 auto;
+    width: 212px;
+  }
+  &__input {
+    box-sizing: border-box;
+    border: 1px solid rgba(1, 23, 10, 0.2);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    padding: 11px;
+    width: 100%;
+  }
+  &__button {
+    border: none;
+    background-color: #31B768;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px 5px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+.page-footer {
+  align-items: center;
+  color: #01170A;
+  display: grid;
+  font-weight: 400;
+  font-size: 14px;
+  grid-template-columns: auto auto 1fr;
+  grid-column: 1/-1;
+  gap: 20px;
+  line-height: 16px;
+  &__сopyright {
+    margin: 0;
+  }
+  &__privacy-policy {
+    color: #01170A;
+  }
+  &__social {
+    justify-self: end;
+  }
+}

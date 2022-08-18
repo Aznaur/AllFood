@@ -1,0 +1,41 @@
+.social {
+  display: flex;
+  list-style: none ;
+  margin: 0;
+  padding: 0;
+  &__item {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    background-color: rgb(21, 123, 212);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+    box-sizing: border-box;
+    display: block;
+    height: 32px;
+    padding: 8px;
+    width: 32px;
+    &--pinteres {
+      background-image: url('../../img/icon-pinterest.svg');
+      background-color: #E60023;
+    }
+    &--facebook {
+      background-image: url('../../img/icon-facebook.svg');
+      background-color: #1877F2;
+    }
+    &--youtube {
+      background-image: url('../../img/icon-youtube.svg');
+      background-color: #FF0000;
+      background-size: 16px 12px;
+    }
+    &--instagram {
+      background-image: url('../../img/icon-instagram.svg');
+      background-color: #F00073;
+    }
+  }
+}
