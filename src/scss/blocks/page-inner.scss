@@ -1,0 +1,26 @@
+.page-inner {
+  &__title {
+    color: #0C0C0D;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    width: 264px;
+    box-sizing: border-box;
+    padding: 17px 10px;
+    border: 1px solid #0C0C0D;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0C0C0D;
+    margin-bottom: 58px;
+  }
+}

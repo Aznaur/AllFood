@@ -1,0 +1,32 @@
+.user-navigation {
+  display: flex;
+  margin-left: 10px;
+  &__item {
+    border: 1px solid #0C0C0D;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    margin-right: 15px;
+    width: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--bookmark {
+      background-image: url('../../img/bookmark.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 10px 14px;
+    }
+    &--notification {
+      background-image: url('../../img/notification.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    &--profile {
+      background-image: url('../../img/photo.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}

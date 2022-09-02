@@ -1,0 +1,8 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  &__logo {
+    margin-right: 10px;
+  }
+}
